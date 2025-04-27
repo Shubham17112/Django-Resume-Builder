@@ -118,7 +118,7 @@ class ContactForm(forms.Form):
 
 	def __init__(self,*args,**kwargs):
 		super().__init__(*args,**kwargs)
-		self.helper=FormHelper
+		self.helper=FormHelper()
 		self.helper.form_class = ' container justify-content-center '
 		# self.helper.label_class = ''
 		# self.helper.field_class = 'col-md-6 col-xs-9'
